@@ -1,0 +1,59 @@
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.consola {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    width: 400px;
+}
+
+.comando {
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+.resultado {
+    margin-bottom: 20px;
+}
+
+.botones-container {
+    display: flex;
+    flex-direction: column; /* Alinea los botones en columna */
+    align-items: stretch; /* Estira los botones para que tengan el mismo ancho */
+}
+
+.boton-consola {
+    background-color: #222;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Agrega espacio entre los botones */
+    cursor: pointer;
+    font-family: monospace;
+    transition: background-color 0.3s;
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.boton-consola:hover {
+    background-color: #333;
+}
+
+.parpadeo {
+    animation: parpadeo 1s infinite;
+}
+
+@keyframes parpadeo {
+    50% {
+        opacity: 0;
+    }
+}
